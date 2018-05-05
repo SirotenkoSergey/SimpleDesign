@@ -1,0 +1,22 @@
+@font-face {
+	font-family: Titles; /* Имя шрифта */
+	src: url(../fonts/Titles.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: Simple_1; /* Имя шрифта */
+	src: url(../fonts/Simple_1.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: Simple_2; /* Имя шрифта */
+	src: url(../fonts/Simple_2.otf); /* Путь к файлу со шрифтом */
+}
+.title {
+	font-family: Titles;
+	text-transform: uppercase;
+}
+p.sub, 
+li {
+	font-family: Simple_2;
+	color: #6f6f71;
+	font-size: 13px;
+}

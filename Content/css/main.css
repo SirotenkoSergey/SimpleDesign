@@ -1,0 +1,232 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+header {
+	margin-top: 75px;
+	background: #f9f9f9;
+	position: relative;
+	box-shadow: 4px 4px 1px 2px #d4c9c5;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	width: 900px;
+	margin-bottom: 100px;
+}
+.logo-wrap {
+	height: 560px;
+	background: url("../img/logo.svg") no-repeat;
+	background-size: 400px;
+	background-position: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.mm,
+.soc {
+	list-style: none;
+	position: absolute;
+}
+.mm {
+	top: 25px;
+	left: -35px;
+}
+.soc {
+	bottom: 25px;
+	right: -35px;
+}
+.mm a>img, 
+.soc a>img{
+	width: 25px;
+	margin-bottom: 10px;
+}
+.price-wrap {
+	position: relative;
+	height: 760px;
+}
+.price-wrap > .pl-animation-element {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    animation: pl 25s linear infinite;
+    z-index: 100;
+}
+.price-item {
+	position: absolute;
+	padding-left: 60px;
+	margin-bottom: 25px;
+	width: 350px;
+	z-index: 200;
+}
+.price-item#pl_1 {
+	background: url("../img/pl/1.png") no-repeat;
+	background-size: 70px;
+	top: 75px;
+	left: 0px;
+}
+.price-item#pl_2 {
+	background: url("../img/pl/2.png") no-repeat;
+	background-size: 70px;
+	top: 0px;
+	right: 0px;
+}
+.price-item#pl_3 {
+	background: url("../img/pl/3.png") no-repeat;
+	background-size: 70px;
+	bottom: 100px;
+	left: 30px;
+}
+.price-item#pl_4 {
+	background: url("../img/pl/4.png") no-repeat;
+	background-size: 70px;
+	bottom: 0px;
+	right: 0px;
+}
+.price-item ul {
+	padding-left: 45px;
+}
+.price-item li {
+	color: #444;
+	font-size: 14px;
+	list-style: square;
+	text-transform: lowercase;
+}
+.triangle-top {
+	width: 300px;
+	owerflow: hidden;
+}
+.triangle-top > img {
+	width: 100%;
+}
+.about-me-wrap {
+	position: relative;
+}
+.about-me-wrap > img{
+	width: 100%;
+}
+.about-me-wrap > .about-me-content {
+	position: absolute;
+	width: 460px;
+	padding: 25px;
+}
+.about-me-wrap > .about-me-content .title {
+	margin-bottom: 45px;
+}
+.about-me-wrap > .about-me-content p{
+	font-family: Simple_2;
+	color: #828186;
+	font-size: 18px;
+}
+.fb-form {
+	position: relative;
+	z-index: 1000;
+	width: 560px;
+    background: #fff;
+    padding: 50px;
+	box-shadow: 4px 4px 1px 2px #d4c9c5;
+}
+.fb-form p {
+	font-family: Simple_2;
+	color: #111;
+	font-size: 18px;
+}
+.layout {
+	margin-bottom: 20px;
+}
+.layout:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.layout > .ll,
+.layout > .lr {
+	float: right;
+	width: 45%;
+}
+.layout > .ll {
+	margin-right: 10%;
+}
+.layout > .lr input {
+	width: 100%;
+	padding: 8px 10px;
+}
+.layout > .lr input[type='text'],
+.layout > .lr input[type='email']{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #cbc2d3;
+}
+.layout > .lr input[type='submit'] {
+	border: none;
+	background: #cbc2d3;
+	color: #fff;
+	font-family: Simple_2;	
+}
+.map-wrap > .map{
+	width: 100%;
+}
+.feedback-form-wrap {
+	position: relative;
+}
+.point-animation-wrapper {
+	z-index: 100;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 800px;
+    height: 525px;
+	background-color: rgba(255,255,255,.35);
+	overflow: hidden;
+}
+.point-animation-wrapper .point {
+	font-size: 0px;
+	float: left;
+	width: 40px;
+	height: 40px;
+	position: relative;	
+}
+.point-animation-wrapper .point:not(.active):after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 50%;
+	left: 50%;
+	margin-top: -2px;
+	margin-left: -2px;
+	background-color: #dcc5c5;
+	border-radius: 50%;
+}
+.point-animation-wrapper .point .icon {
+	font-size: 16px;
+	color: #dcc5c5;
+	line-height: 40px;
+	border: 1px solid;
+	text-align: center;
+	display: none;
+}
+.point-animation-wrapper .point.active {
+	background-color: rgba(255,255,255,0.25);
+}
+.point-animation-wrapper .point.active  .icon {
+	display: block;
+}
+.copyright {
+	font-family: Simple_2;
+	color: #828186;
+	font-size: 16px;
+	text-align: center;
+}
+@keyframes pl {
+	from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+
